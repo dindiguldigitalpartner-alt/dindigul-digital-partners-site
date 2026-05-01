@@ -1,0 +1,3473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dindigul Digital Partners – Your Growth Partners in Dindigul</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Tamil:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0A1628;
+      --navy2: #0D1E38;
+      --gold: #C9A84C;
+      --gold2: #E8C96A;
+      --white: #FFFFFF;
+      --off: #F8F6F1;
+      --dark: #0A1628;
+      --mid: #2C3E5C;
+      --light: #5A6E8C;
+      --green: #22C55E;
+      --bordern: rgba(10, 22, 40, 0.1);
+      --borderg: rgba(201, 168, 76, 0.25);
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fff;
+      color: var(--dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: rgba(10, 22, 40, 0.98);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      padding: 0 40px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nl {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nl-img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(201, 168, 76, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .nl-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .nl-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 17px;
+      letter-spacing: 2px;
+      color: var(--gold2);
+      line-height: 1;
+    }
+
+    .nl-sub {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(201, 168, 76, 0.5);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: color .2s;
+      cursor: pointer;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold2);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold2)) !important;
+      color: var(--navy) !important;
+      padding: 8px 20px !important;
+      border-radius: 8px;
+      font-weight: 700 !important;
+    }
+
+    .ham {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .ham span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--gold2);
+      border-radius: 2px;
+      transition: all .3s;
+    }
+
+    /* MOBILE MENU */
+    .mob {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 22, 40, 0.99);
+      z-index: 9998;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .mob.open {
+      display: flex;
+    }
+
+    .mob a {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color .2s;
+    }
+
+    .mob a:hover {
+      color: var(--gold2);
+    }
+
+    .mob-x {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.4);
+      background: none;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #07101C 0%, #0D1E38 60%, #0E2040 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 90px 40px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 55% 60% at 80% 50%, rgba(201, 168, 76, 0.07), transparent 60%), radial-gradient(ellipse 35% 40% at 5% 80%, rgba(201, 168, 76, 0.05), transparent 50%);
+      pointer-events: none;
+    }
+
+    .hw {
+      position: relative;
+      z-index: 1;
+      max-width: 1160px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hbadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--gold2);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      animation: up .7s ease both;
+    }
+
+    .ldot {
+      width: 7px;
+      height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: blink 1.8s infinite;
+    }
+
+    .hh1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(54px, 9vw, 108px);
+      line-height: .92;
+      letter-spacing: 1px;
+      color: #fff;
+      margin-bottom: 10px;
+      animation: up .8s ease .05s both;
+    }
+
+    .hh1 .g {
+      color: var(--gold2);
+    }
+
+    .htag {
+      font-size: clamp(14px, 2vw, 18px);
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 6px;
+      animation: up .8s ease .1s both;
+    }
+
+    .htamil {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 12px;
+      color: rgba(201, 168, 76, 0.55);
+      margin-bottom: 16px;
+      animation: up .8s ease .12s both;
+    }
+
+    .hsvcs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 16px;
+      animation: up .8s ease .13s both;
+    }
+
+    .hsvc {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 100px;
+      padding: 5px 12px;
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+    }
+
+    .hsvc.hi {
+      background: rgba(201, 168, 76, 0.12);
+      border-color: rgba(201, 168, 76, 0.3);
+      color: var(--gold2);
+      font-weight: 600;
+    }
+
+    .hdesc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.58);
+      line-height: 1.75;
+      max-width: 520px;
+      font-weight: 300;
+      margin-bottom: 24px;
+      animation: up .8s ease .15s both;
+    }
+
+    .hbtns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      animation: up .8s ease .18s both;
+    }
+
+    .btn-g {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      padding: 13px 28px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      box-shadow: 0 4px 20px rgba(201, 168, 76, 0.25);
+      transition: transform .2s, box-shadow .2s;
+      cursor: pointer;
+    }
+
+    .btn-g:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(201, 168, 76, 0.35);
+    }
+
+    .btn-o {
+      background: transparent;
+      color: #fff;
+      padding: 13px 22px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: border-color .2s, color .2s;
+      cursor: pointer;
+    }
+
+    .btn-o:hover {
+      border-color: var(--gold2);
+      color: var(--gold2);
+    }
+
+    /* PRICE TEASER */
+    .pteaser {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 12px;
+      padding: 13px 16px;
+      margin-bottom: 24px;
+      animation: up .8s ease .2s both;
+    }
+
+    .pteaser-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 9px;
+    }
+
+    .pteaser-pills {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .pp {
+      border-radius: 7px;
+      padding: 4px 11px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+
+    .pp1 {
+      background: rgba(126, 200, 227, 0.1);
+      border: 1px solid rgba(126, 200, 227, 0.25);
+      color: #7EC8E3;
+    }
+
+    .pp2 {
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      color: #4ade80;
+    }
+
+    .pp3 {
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      color: var(--gold2);
+    }
+
+    .pp4 {
+      background: rgba(232, 126, 82, 0.1);
+      border: 1px solid rgba(232, 126, 82, 0.25);
+      color: #E87E52;
+    }
+
+    .pp5 {
+      background: rgba(155, 114, 207, 0.1);
+      border: 1px solid rgba(155, 114, 207, 0.25);
+      color: #C4A8F0;
+    }
+
+    .pteaser a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--gold2);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .hstats {
+      display: flex;
+      gap: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      animation: up .8s ease .22s both;
+      flex-wrap: wrap;
+    }
+
+    .hsn {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 34px;
+      color: var(--gold2);
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+
+    .hsl {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.33);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 2px;
+    }
+
+    .hright {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      animation: up .9s ease .3s both;
+    }
+
+    .hlogo {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: drop-shadow(0 0 28px rgba(201, 168, 76, 0.2));
+    }
+
+    .hlogo-fb {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(201, 168, 76, 0.05));
+      border: 2px solid rgba(201, 168, 76, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: var(--gold2);
+      text-align: center;
+      line-height: 1.4;
+      padding: 16px;
+    }
+
+    .htalks {
+      width: 100px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 14px rgba(201, 168, 76, 0.2));
+    }
+
+    .pby {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.22);
+    }
+
+    /* MARQUEE */
+    .mq {
+      background: linear-gradient(90deg, var(--gold), var(--gold2), var(--gold));
+      padding: 11px 0;
+      overflow: hidden;
+    }
+
+    .mq-t {
+      display: inline-flex;
+      animation: marquee 30s linear infinite;
+      white-space: nowrap;
+    }
+
+    .mq-i {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: var(--navy);
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mq-i::after {
+      content: '◆';
+      font-size: 7px;
+      opacity: .4;
+    }
+
+    /* SECTION BASE */
+    .sec {
+      padding: 76px 40px;
+    }
+
+    .sin {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .stag {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .stag::before {
+      content: '';
+      width: 16px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .sh {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1;
+      color: var(--navy);
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .sh .g {
+      color: var(--gold);
+    }
+
+    .sp {
+      font-size: 14px;
+      color: var(--light);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    /* CLIENTS */
+    .cli-sec {
+      background: var(--navy);
+      padding: 40px;
+    }
+
+    .cli-in {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .cli-lbl {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(201, 168, 76, 0.45);
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .cli-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      justify-content: center;
+    }
+
+    .ctag {
+      background: rgba(201, 168, 76, 0.07);
+      border: 1px solid rgba(201, 168, 76, 0.16);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.72);
+      transition: border-color .2s, color .2s;
+    }
+
+    .ctag:hover {
+      border-color: var(--gold);
+      color: var(--gold2);
+    }
+
+    .cmore {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* TALKS */
+    .tk-sec {
+      background: var(--navy2);
+      padding: 76px 40px;
+    }
+
+    .tk-in {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .tk-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .tk-img {
+      width: 170px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 22px rgba(201, 168, 76, 0.25));
+    }
+
+    .tk-img-fb {
+      width: 170px;
+      height: 170px;
+      background: rgba(201, 168, 76, 0.08);
+      border: 2px solid rgba(201, 168, 76, 0.2);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+    }
+
+    .tk-counts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      width: 100%;
+    }
+
+    .tc {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      padding: 10px 12px;
+      text-align: center;
+    }
+
+    .tc-n {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      color: var(--gold2);
+      line-height: 1;
+    }
+
+    .tc-l {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.33);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    .tk-lks {
+      display: flex;
+      gap: 8px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+
+    .tkl {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(201, 168, 76, 0.28);
+      color: var(--gold2);
+      transition: background .2s;
+    }
+
+    .tkl:hover {
+      background: rgba(201, 168, 76, 0.1);
+    }
+
+    .tk-content .stag {
+      color: var(--gold2);
+    }
+
+    .tk-content .stag::before {
+      background: var(--gold2);
+    }
+
+    .tk-content .sh {
+      color: #fff;
+    }
+
+    .tk-desc {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.48);
+      line-height: 1.75;
+      margin: 10px 0 20px;
+    }
+
+    .tk-pts {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .tp {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 12px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 9px;
+    }
+
+    .tp-ico {
+      font-size: 19px;
+      flex-shrink: 0;
+    }
+
+    .tp-t {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+
+    .tp-d {
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.43);
+      line-height: 1.45;
+    }
+
+    /* HOW IT WORKS */
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 40px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--bordern);
+    }
+
+    .hw-i {
+      background: #fff;
+      padding: 26px 20px;
+      transition: background .3s;
+    }
+
+    .hw-i:hover {
+      background: var(--navy);
+    }
+
+    .hw-i:hover .hw-t {
+      color: #fff;
+    }
+
+    .hw-i:hover .hw-d {
+      color: rgba(255, 255, 255, 0.48);
+    }
+
+    .hw-i:hover .hw-tm {
+      color: var(--gold2);
+    }
+
+    .hw-n {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: var(--navy);
+      opacity: .05;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .hw-ico {
+      font-size: 24px;
+      margin-bottom: 9px;
+    }
+
+    .hw-t {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 5px;
+      transition: color .3s;
+    }
+
+    .hw-d {
+      font-size: 12px;
+      color: var(--light);
+      line-height: 1.55;
+      transition: color .3s;
+    }
+
+    .hw-tm {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 10px;
+      color: var(--gold);
+      margin-top: 7px;
+      font-weight: 600;
+      transition: color .3s;
+    }
+
+    /* 3 PLATFORMS */
+    .plat-sec {
+      background: var(--navy);
+      padding: 76px 40px;
+    }
+
+    .plat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 13px;
+      margin-top: 40px;
+    }
+
+    .pc {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 15px;
+      padding: 26px 20px;
+      transition: border-color .3s, transform .3s;
+    }
+
+    .pc:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .pc-n {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 64px;
+      color: var(--gold);
+      opacity: .06;
+      line-height: 1;
+    }
+
+    .pc-ico {
+      font-size: 30px;
+      margin-bottom: 11px;
+    }
+
+    .pc-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .pc-sub {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 9px;
+    }
+
+    .pc-desc {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.43);
+      line-height: 1.6;
+    }
+
+    /* PACKAGES */
+    .pkg-sec {
+      background: var(--off);
+      padding: 76px 40px;
+    }
+
+    .pkg-tog {
+      display: flex;
+      background: rgba(10, 22, 40, 0.07);
+      border: 1px solid var(--bordern);
+      border-radius: 10px;
+      padding: 4px;
+      width: fit-content;
+      margin: 24px 0 32px;
+    }
+
+    .tb {
+      padding: 9px 20px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--light);
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      transition: all .2s;
+    }
+
+    .tb.active {
+      background: var(--navy);
+      color: var(--gold2);
+    }
+
+    .pkg-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 13px;
+    }
+
+    .pkc {
+      background: #fff;
+      border: 1.5px solid var(--bordern);
+      border-radius: 17px;
+      padding: 24px 20px;
+      position: relative;
+      transition: border-color .25s, transform .25s, box-shadow .25s;
+    }
+
+    .pkc:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 26px rgba(201, 168, 76, 0.1);
+    }
+
+    .pkc.t1 {
+      border-top: 4px solid #7EC8E3;
+    }
+
+    .pkc.t2 {
+      border-top: 4px solid var(--green);
+    }
+
+    .pkc.t3 {
+      border-top: 4px solid var(--gold);
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .pkc.t4 {
+      border-top: 4px solid #E87E52;
+    }
+
+    .pkc.t5 {
+      border-top: 4px solid #9B72CF;
+      border-color: #9B72CF;
+      background: linear-gradient(145deg, #0E1830, #14203A);
+    }
+
+    .pkg-pop {
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      color: var(--navy);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 13px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .pkg-tp {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border-radius: 100px;
+      padding: 4px 11px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .t1 .pkg-tp {
+      background: rgba(126, 200, 227, 0.12);
+      color: #7EC8E3;
+    }
+
+    .t2 .pkg-tp {
+      background: rgba(34, 197, 94, 0.1);
+      color: #16a34a;
+    }
+
+    .t3 .pkg-tp {
+      background: rgba(201, 168, 76, 0.15);
+      color: var(--gold2);
+    }
+
+    .t4 .pkg-tp {
+      background: rgba(232, 126, 82, 0.1);
+      color: #E87E52;
+    }
+
+    .t5 .pkg-tp {
+      background: rgba(155, 114, 207, 0.15);
+      color: #C4A8F0;
+    }
+
+    .pkg-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      letter-spacing: 1px;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    .t3 .pkg-name,
+    .t5 .pkg-name {
+      color: #fff;
+    }
+
+    .pkg-price {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 44px;
+      color: var(--navy);
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+
+    .pkg-price sup {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      vertical-align: super;
+    }
+
+    .t3 .pkg-price,
+    .t5 .pkg-price {
+      color: #fff;
+    }
+
+    .pkg-pv {
+      font-size: 11px;
+      color: var(--light);
+      margin-bottom: 4px;
+    }
+
+    .t3 .pkg-pv,
+    .t5 .pkg-pv {
+      color: rgba(255, 255, 255, 0.38);
+    }
+
+    .sv {
+      display: inline-block;
+      border-radius: 6px;
+      padding: 1px 7px;
+      font-size: 10px;
+      font-weight: 700;
+      margin-left: 4px;
+    }
+
+    .sv1 {
+      background: rgba(34, 197, 94, 0.09);
+      color: #16a34a;
+    }
+
+    .sv2 {
+      background: rgba(201, 168, 76, 0.13);
+      color: var(--gold2);
+    }
+
+    .sv3 {
+      background: rgba(232, 126, 82, 0.09);
+      color: #E87E52;
+    }
+
+    .sv4 {
+      background: rgba(155, 114, 207, 0.15);
+      color: #C4A8F0;
+    }
+
+    .pkg-con {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(34, 197, 94, 0.07);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      border-radius: 100px;
+      padding: 3px 9px;
+      font-size: 10px;
+      font-weight: 600;
+      color: #16a34a;
+      margin-bottom: 14px;
+    }
+
+    .pkg-line {
+      height: 1px;
+      background: var(--bordern);
+      margin-bottom: 13px;
+    }
+
+    .t3 .pkg-line,
+    .t5 .pkg-line {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .pkg-f {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .pkg-f li {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      font-size: 12.5px;
+      color: var(--dark);
+      line-height: 1.4;
+    }
+
+    .t3 .pkg-f li,
+    .t5 .pkg-f li {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .fi {
+      font-size: 13px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .pkg-bonus {
+      margin-top: 11px;
+      background: rgba(201, 168, 76, 0.07);
+      border: 1px solid rgba(201, 168, 76, 0.18);
+      border-radius: 9px;
+      padding: 8px 10px;
+      font-size: 11.5px;
+      color: #7A5A00;
+      font-weight: 500;
+      line-height: 1.45;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    .t3 .pkg-bonus,
+    .t5 .pkg-bonus {
+      color: var(--gold2);
+      border-color: rgba(201, 168, 76, 0.22);
+    }
+
+    .pkg-note {
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--light);
+      padding: 6px 9px;
+      background: rgba(10, 22, 40, 0.04);
+      border-radius: 7px;
+      line-height: 1.4;
+    }
+
+    .t3 .pkg-note,
+    .t5 .pkg-note {
+      background: rgba(255, 255, 255, 0.04);
+      color: rgba(255, 255, 255, 0.33);
+    }
+
+    .pkg-cta {
+      display: block;
+      text-align: center;
+      margin-top: 13px;
+      background: var(--navy);
+      color: #fff;
+      padding: 11px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s;
+      letter-spacing: .3px;
+      cursor: pointer;
+    }
+
+    .pkg-cta:hover {
+      background: #122240;
+    }
+
+    .t3 .pkg-cta,
+    .t5 .pkg-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+    }
+
+    /* ELITE WIDE */
+    .pkc-e {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      padding: 28px;
+    }
+
+    @media(max-width:640px) {
+      .pkc-e {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pkc-e .pkg-pop {
+      left: 22px;
+      transform: none;
+    }
+
+    /* PAYMENT TERMS */
+    .pay-box {
+      margin-top: 14px;
+      background: rgba(34, 197, 94, 0.05);
+      border: 1px solid rgba(34, 197, 94, 0.18);
+      border-radius: 12px;
+      padding: 14px 18px;
+    }
+
+    .pay-t {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #16a34a;
+      margin-bottom: 9px;
+    }
+
+    .pay-steps {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .ps {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      color: var(--mid);
+      font-weight: 500;
+    }
+
+    .psn {
+      width: 21px;
+      height: 21px;
+      background: #16a34a;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* IND VIDEO */
+    .ind-box {
+      background: #fff;
+      border: 1.5px solid var(--bordern);
+      border-radius: 17px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .ind-l {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .ind-p {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 52px;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .ind-p span {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      color: var(--light);
+      font-weight: 400;
+    }
+
+    .ind-f {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .ind-f li {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      font-size: 13px;
+      color: var(--dark);
+      line-height: 1.4;
+    }
+
+    /* META ADDON */
+    .meta-box {
+      margin-top: 14px;
+      background: linear-gradient(135deg, #0D1E38, #122240);
+      border: 1px solid rgba(201, 168, 76, 0.16);
+      border-radius: 15px;
+      padding: 22px 26px;
+    }
+
+    .meta-h {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 13px;
+    }
+
+    .meta-pill {
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 11px;
+      border-radius: 100px;
+    }
+
+    .meta-ttl {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+      gap: 8px;
+    }
+
+    .mi {
+      display: flex;
+      gap: 7px;
+      align-items: flex-start;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.62);
+      padding: 8px 11px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      line-height: 1.4;
+    }
+
+    /* SERVICES */
+    .svc-sec {
+      background: #fff;
+      padding: 76px 40px;
+    }
+
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 13px;
+      margin-top: 40px;
+    }
+
+    .sv-c {
+      background: var(--off);
+      border: 1.5px solid var(--bordern);
+      border-radius: 15px;
+      padding: 24px 20px;
+      transition: border-color .3s, transform .3s, box-shadow .3s;
+    }
+
+    .sv-c:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(201, 168, 76, 0.08);
+    }
+
+    .sv-ico {
+      font-size: 30px;
+      margin-bottom: 11px;
+    }
+
+    .sv-t {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .sv-d {
+      font-size: 12.5px;
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    /* WHY BOX */
+    .why-box {
+      margin-top: 40px;
+      background: var(--navy);
+      border-radius: 17px;
+      padding: 32px;
+      border: 1px solid rgba(201, 168, 76, 0.14);
+    }
+
+    .why-h {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 30px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 11px;
+    }
+
+    .wi {
+      padding: 13px 15px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 9px;
+    }
+
+    .wi-ico {
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .wi-t {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+
+    .wi-d {
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.38);
+      line-height: 1.5;
+    }
+
+    /* CAMERA */
+    .cam-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 11px;
+      margin-top: 16px;
+    }
+
+    .cam {
+      background: var(--navy);
+      border-radius: 11px;
+      padding: 17px 15px;
+      border: 1px solid rgba(201, 168, 76, 0.11);
+    }
+
+    .cam-n {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+
+    .cam-l {
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.38);
+      margin-bottom: 9px;
+      line-height: 1.4;
+    }
+
+    .cam-p {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      color: var(--gold2);
+      letter-spacing: 1px;
+    }
+
+    .cam-p span {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.28);
+      font-weight: 400;
+    }
+
+    /* WEB DEV */
+    .wd-box {
+      margin-top: 28px;
+      background: linear-gradient(135deg, var(--navy), #0E2040);
+      border-radius: 17px;
+      padding: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+      border: 1px solid rgba(201, 168, 76, 0.16);
+    }
+
+    .wd-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 7px;
+    }
+
+    .wd-h {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 34px;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 9px;
+      letter-spacing: 1px;
+    }
+
+    .wd-d {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.48);
+      line-height: 1.7;
+    }
+
+    .wd-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin: 13px 0;
+    }
+
+    .wdl {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .wd-skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+    }
+
+    .wsk {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 11px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.68);
+      font-weight: 500;
+    }
+
+    .wd-note {
+      margin-top: 12px;
+      padding: 11px 13px;
+      background: rgba(201, 168, 76, 0.07);
+      border: 1px solid rgba(201, 168, 76, 0.16);
+      border-radius: 8px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.52);
+      line-height: 1.5;
+    }
+
+    /* ABOUT */
+    .about-sec {
+      background: var(--off);
+      padding: 76px 40px;
+    }
+
+    .ab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: start;
+      margin-top: 40px;
+    }
+
+    .ab-card {
+      background: var(--navy);
+      border-radius: 18px;
+      padding: 28px;
+      border: 1px solid rgba(201, 168, 76, 0.16);
+    }
+
+    .ab-lr {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .ab-li {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .ab-li-fb {
+      width: 48px;
+      height: 48px;
+      background: rgba(201, 168, 76, 0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .ab-n {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: var(--gold2);
+      line-height: 1;
+    }
+
+    .ab-s {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(201, 168, 76, 0.42);
+    }
+
+    .ab-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .ab-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 13px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .ab-l {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.33);
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+
+    .ab-v {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .addr {
+      margin-top: 11px;
+      padding: 13px 15px;
+      background: rgba(201, 168, 76, 0.05);
+      border: 1px solid rgba(201, 168, 76, 0.13);
+      border-radius: 11px;
+    }
+
+    .addr-l {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 5px;
+    }
+
+    .addr-t {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.52);
+      line-height: 1.65;
+    }
+
+    .ab-para {
+      font-size: 14px;
+      color: var(--mid);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .ab-para strong {
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .ab-quote {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 13px;
+      color: var(--navy);
+      font-weight: 700;
+      padding: 13px 16px;
+      border-left: 3px solid var(--gold);
+      background: rgba(201, 168, 76, 0.05);
+      border-radius: 0 10px 10px 0;
+      line-height: 1.65;
+      margin: 16px 0;
+    }
+
+    .ab-quote small {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      color: var(--light);
+      font-weight: 400;
+      margin-top: 3px;
+    }
+
+    .vals {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .val {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12.5px;
+      color: var(--dark);
+      padding: 8px 11px;
+      background: #fff;
+      border-radius: 8px;
+      font-weight: 500;
+      border: 1px solid var(--bordern);
+    }
+
+    /* CONTACT */
+    .ct-sec {
+      background: var(--navy);
+      padding: 76px 40px;
+    }
+
+    .ct-in {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .cbig {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(42px, 5.5vw, 70px);
+      color: #fff;
+      line-height: .95;
+      letter-spacing: 1px;
+      margin-bottom: 11px;
+    }
+
+    .cbig .g {
+      color: var(--gold2);
+    }
+
+    .ctamil {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .chours {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.33);
+      margin-bottom: 22px;
+      line-height: 1.65;
+    }
+
+    .clinks {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .cl-i {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 11px 15px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      text-decoration: none;
+      transition: border-color .2s, transform .2s;
+      cursor: pointer;
+    }
+
+    .cl-i:hover {
+      border-color: var(--gold);
+      transform: translateX(3px);
+    }
+
+    .cl-ico {
+      width: 34px;
+      height: 34px;
+      background: rgba(201, 168, 76, 0.08);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .cl-l {
+      font-size: 9px;
+      color: rgba(255, 255, 255, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cl-v {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 1px;
+    }
+
+    .caddr {
+      margin-top: 11px;
+      padding: 13px 15px;
+      background: rgba(201, 168, 76, 0.04);
+      border: 1px solid rgba(201, 168, 76, 0.12);
+      border-radius: 10px;
+    }
+
+    .caddr-l {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .caddr-t {
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.48);
+      line-height: 1.65;
+    }
+
+    .cf {
+      background: #fff;
+      border-radius: 18px;
+      padding: 28px 26px;
+    }
+
+    .cf-t {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      color: var(--navy);
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .cf-s {
+      font-size: 12px;
+      color: var(--light);
+      margin-bottom: 20px;
+    }
+
+    .fg {
+      margin-bottom: 11px;
+    }
+
+    label {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      background: var(--off);
+      border: 1.5px solid var(--bordern);
+      border-radius: 9px;
+      padding: 11px 13px;
+      color: var(--dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13.5px;
+      outline: none;
+      transition: border-color .2s;
+      appearance: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--gold);
+      background: #FDF9F0;
+    }
+
+    select option {
+      background: #fff;
+      color: var(--dark);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 78px;
+    }
+
+    .frow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .sub-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      color: var(--gold2);
+      border: none;
+      border-radius: 9px;
+      padding: 13px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: opacity .2s, transform .15s;
+      margin-top: 4px;
+    }
+
+    .sub-btn:hover {
+      opacity: .9;
+      transform: translateY(-1px);
+    }
+
+    .sub-btn:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+
+    .ok-msg {
+      display: none;
+      background: rgba(34, 197, 94, 0.07);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      border-radius: 9px;
+      padding: 12px;
+      text-align: center;
+      color: #16a34a;
+      font-weight: 600;
+      font-size: 13px;
+      margin-top: 9px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #060F1E;
+      border-top: 1px solid rgba(201, 168, 76, 0.1);
+      padding: 40px 40px 24px;
+    }
+
+    .ft-in {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .ft-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 36px;
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .ft-bl {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 11px;
+    }
+
+    .ft-li {
+      width: 38px;
+      height: 38px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .ft-li-fb {
+      width: 38px;
+      height: 38px;
+      background: rgba(201, 168, 76, 0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .ft-bn {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: var(--gold2);
+    }
+
+    .ft-d {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.28);
+      line-height: 1.7;
+      margin-bottom: 9px;
+    }
+
+    .ft-tamil {
+      font-family: 'Noto Sans Tamil', sans-serif;
+      font-size: 11px;
+      color: var(--gold);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .ft-ct {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 11px;
+    }
+
+    .ft-lks {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .ft-lks a {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.33);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .ft-lks a:hover {
+      color: var(--gold2);
+    }
+
+    .ft-bot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .ft-copy {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.16);
+    }
+
+    .ft-soc {
+      display: flex;
+      gap: 13px;
+    }
+
+    .ft-soc a {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.22);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .ft-soc a:hover {
+      color: var(--gold2);
+    }
+
+    /* REVEAL */
+    .rv {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .rv.vis {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ANIMATIONS */
+    @keyframes up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .3;
+      }
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) {
+      .hw {
+        grid-template-columns: 1fr;
+      }
+
+      .hright {
+        display: none;
+      }
+
+      .tk-in {
+        grid-template-columns: 1fr;
+      }
+
+      .tk-logo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .ab-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ct-in {
+        grid-template-columns: 1fr;
+      }
+
+      .ft-top {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .wd-box {
+        grid-template-columns: 1fr;
+      }
+
+      .ind-box {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width:768px) {
+      nav {
+        padding: 0 16px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .ham {
+        display: flex;
+      }
+
+      .sec,
+      .tk-sec,
+      .plat-sec,
+      .pkg-sec,
+      .svc-sec,
+      .about-sec,
+      .ct-sec {
+        padding: 52px 16px;
+      }
+
+      .cli-sec {
+        padding: 32px 16px;
+      }
+
+      footer {
+        padding: 32px 16px 20px;
+      }
+
+      .how-grid,
+      .plat-grid,
+      .svc-grid,
+      .pkg-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid,
+      .vals,
+      .wd-skills,
+      .frow {
+        grid-template-columns: 1fr;
+      }
+
+      .ft-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .ft-bot {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hstats {
+        gap: 16px;
+      }
+
+      .pay-steps {
+        flex-direction: column;
+        gap: 9px;
+      }
+
+      .hero {
+        padding: 86px 16px 56px;
+      }
+    }
+
+    .main-logo-img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(201, 168, 76, 0.3));
+    }
+
+    .main-logo-circle {
+      width: 250px;
+      height: 250px;
+      border: 2px solid rgba(201, 168, 76, 0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .hlogo-fb {
+      color: #d1b25a;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .pby {
+      text-align: center;
+      margin-top: 30px;
+      color: #6c7a89;
+      letter-spacing: 2px;
+    }
+
+    .sub-logo-box {
+      width: 100px;
+      height: 100px;
+      margin: 15px auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sub-logo-box img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .sub-text {
+      text-align: center;
+      color: #d1b25a;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MOBILE MENU -->
+  <div class="mob" id="mobMenu">
+    <button class="mob-x" onclick="document.getElementById('mobMenu').classList.remove('open')">✕</button>
+    <a onclick="goTo('home')">Home</a>
+    <a onclick="goTo('talks')">Dindigul Talks</a>
+    <a onclick="goTo('packages')">Packages</a>
+    <a onclick="goTo('services')">Services</a>
+    <a onclick="goTo('about')">About</a>
+    <a onclick="goTo('contact')">Contact</a>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nl" onclick="goTo('home')" style="cursor:pointer;">
+      <div class="nl-img"><img src="./assets/logo/digital-partners.png" alt=""
+          onerror="this.parentElement.innerHTML='🏢'"></div>
+      <div>
+        <div class="nl-name">Dindigul Digital Partners</div>
+        <div class="nl-sub">Your Growth Partners in Dindigul</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a onclick="goTo('talks')">Dindigul Talks</a></li>
+      <li><a onclick="goTo('packages')">Packages</a></li>
+      <li><a onclick="goTo('services')">Services</a></li>
+      <li><a onclick="goTo('about')">About</a></li>
+      <li><a onclick="goTo('contact')" class="nav-cta">Get Started →</a></li>
+    </ul>
+    <button class="ham" onclick="document.getElementById('mobMenu').classList.add('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <div id="home">
+    <div class="hero">
+      <div class="hw">
+        <div>
+          <div class="hbadge">
+            <div class="ldot"></div> Now Accepting Clients · Dindigul
+          </div>
+          <div class="hh1">YOUR <span class="g">GROWTH</span><br>PARTNERS<br>IN DINDIGUL</div>
+          <div class="htag">Where Dindigul Businesses Grow Digitally</div>
+          <div class="htamil">உங்கள் வியாபாரத்தை லட்சக்கணக்கான மக்களிடம் கொண்டு செல்வோம்</div>
+          <div class="hsvcs">
+            <div class="hsvc">🎬 Video Content</div>
+            <div class="hsvc">📱 Social Media</div>
+            <div class="hsvc hi">🌐 Website Development</div>
+            <div class="hsvc hi">📲 App Development</div>
+            <div class="hsvc">📷 Camera Rental</div>
+            <div class="hsvc">🎯 Meta Ads</div>
+          </div>
+          <p class="hdesc">Powered by <strong style="color:var(--gold2)">Dindigul Talks — 90K+ followers</strong> across
+            Instagram (77K), Facebook (10K) & YouTube (3K). From promotional videos to billing software, brand websites
+            to mobile apps — your complete digital partner in Dindigul.</p>
+          <div class="hbtns">
+            <a class="btn-g" onclick="goTo('packages')">See Packages & Pricing →</a>
+            <a class="btn-o" onclick="goTo('contact')">📞 Talk To Us</a>
+          </div>
+          <div class="pteaser">
+            <div class="pteaser-title">📦 Social Media Plans — Starter from ₹4,000/month · All plans 3-month contract
+            </div>
+            <div class="pteaser-pills">
+              <span class="pp pp1">Starter ₹4,000</span>
+              <span class="pp pp2">Growth ₹7,600 <small style="opacity:.7">Save ₹400/video</small></span>
+              <span class="pp pp3">Prime ₹11,100 <small style="opacity:.7">Save ₹900/mo</small></span>
+              <span class="pp pp4">Power ₹14,400 <small style="opacity:.7">Save ₹1,600/mo</small></span>
+              <span class="pp pp5">Elite ₹17,500 <small style="opacity:.7">Save ₹2,500/mo</small></span>
+            </div>
+            <a onclick="goTo('packages')" style="cursor:pointer;">View full plan details & savings →</a>
+          </div>
+          <div class="hstats">
+            <div>
+              <div class="hsn">90K+</div>
+              <div class="hsl">Total Followers</div>
+            </div>
+            <div>
+              <div class="hsn">77K</div>
+              <div class="hsl">Instagram</div>
+            </div>
+            <div>
+              <div class="hsn">10K</div>
+              <div class="hsl">Facebook</div>
+            </div>
+            <div>
+              <div class="hsn">3K</div>
+              <div class="hsl">YouTube</div>
+            </div>
+            <div>
+              <div class="hsn">50+</div>
+              <div class="hsl">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="hright">
+          <!-- Main Logo (Circle Style) -->
+          <div class="main-logo-circle">
+            <img src="./assets/logo/digital-partners.png" alt="Dindigul Digital Partners Logo" class="main-logo-img">
+          </div>
+
+          <div class="pby">POWERED BY</div>
+
+          <!-- Sub Logo -->
+          <div class="sub-logo-box">
+            <img src="./assets/logo/dindigul-talks.png" alt="Dindigul Talks Logo">
+          </div>
+
+          <!-- Sub Brand Name -->
+          <div class="sub-text">DINDIGUL TALKS</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="mq">
+    <div class="mq-t">
+      <span class="mq-i">Dindigul Talks · 90K+ Followers</span>
+      <span class="mq-i">Instagram 77K · Facebook 10K · YouTube 3K</span>
+      <span class="mq-i">Social Media Management</span>
+      <span class="mq-i">Video Content Creation</span>
+      <span class="mq-i">Website & App Development</span>
+      <span class="mq-i">Billing Software</span>
+      <span class="mq-i">Camera Rental Available</span>
+      <span class="mq-i">Meta Ads Management</span>
+      <span class="mq-i">50+ Happy Clients</span>
+      <span class="mq-i">Tamil & English Support</span>
+      <span class="mq-i">Dindigul Talks · 90K+ Followers</span>
+      <span class="mq-i">Instagram 77K · Facebook 10K · YouTube 3K</span>
+      <span class="mq-i">Social Media Management</span>
+      <span class="mq-i">Video Content Creation</span>
+      <span class="mq-i">Website & App Development</span>
+      <span class="mq-i">Billing Software</span>
+      <span class="mq-i">Camera Rental Available</span>
+      <span class="mq-i">Meta Ads Management</span>
+      <span class="mq-i">50+ Happy Clients</span>
+      <span class="mq-i">Tamil & English Support</span>
+    </div>
+  </div>
+
+  <!-- CLIENTS -->
+  <div class="cli-sec">
+    <div class="cli-in">
+      <div class="cli-lbl">Trusted by 50+ Local Businesses · Our Premium Clients</div>
+      <div class="cli-row">
+        <div class="ctag">Supreme</div>
+        <div class="ctag">Max</div>
+        <div class="ctag">Darling</div>
+        <div class="ctag">James & Co</div>
+        <div class="ctag">Meenachi Fan House</div>
+        <div class="ctag">Namma Chennai Mens Wear</div>
+        <div class="ctag">Parvathys Silks</div>
+        <div class="ctag">Designs</div>
+        <div class="cmore">+ 50 More Local Businesses</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ DINDIGUL TALKS ══ -->
+  <div class="tk-sec" id="talks">
+    <div class="tk-in">
+      <div class="tk-logo">
+        <div class="tk-img-fb">
+          <div class="sub-logo-box">
+            <img src="./assets/logo/dindigul-talks.png" alt="Dindigul Talks Logo">
+          </div>
+
+        </div>
+        <div class="tk-counts">
+          <div class="tc">
+            <div class="tc-n">90K+</div>
+            <div class="tc-l">Total</div>
+          </div>
+          <div class="tc">
+            <div class="tc-n">77K</div>
+            <div class="tc-l">Instagram</div>
+          </div>
+          <div class="tc">
+            <div class="tc-n">10K</div>
+            <div class="tc-l">Facebook</div>
+          </div>
+          <div class="tc">
+            <div class="tc-n">3K</div>
+            <div class="tc-l">YouTube</div>
+          </div>
+        </div>
+        <div class="tk-lks">
+          <a href="https://www.instagram.com/dindigul_talks" target="_blank" class="tkl"> Dindigul Talks</a>
+          <a href="https://www.instagram.com/dindigul_digital_partners" target="_blank" class="tkl"> Partners Page</a>
+        </div>
+      </div>
+      <div class="tk-content">
+        <div class="stag">Our Biggest Advantage</div>
+        <div class="sh" style="color:#fff;">DINDIGUL TALKS<br><span style="color:var(--gold2)">YOUR
+            UNFAIR<br>ADVANTAGE</span></div>
+        <p class="tk-desc">No other agency in Dindigul has this. Every video we create for your brand is posted on
+          <strong style="color:#fff">Dindigul Talks</strong> — 90K+ real local followers across Instagram, Facebook, and
+          YouTube. Your brand reaches people who already trust us. We've already successfully completed brand videos for
+          50+ local businesses.</p>
+        <div class="tk-pts">
+          <div class="tp">
+            <div class="tp-ico">📸</div>
+            <div>
+              <div class="tp-t">Instagram — 77K Followers (Primary)</div>
+              <div class="tp-d">Highest engagement. Your video posted on Dindigul Talks Instagram — real Dindigul
+                audience, organic reach every time.</div>
+            </div>
+          </div>
+          <div class="tp">
+            <div class="tp-ico">👥</div>
+            <div>
+              <div class="tp-t">Facebook — 10K Followers</div>
+              <div class="tp-d">Strong local community. Video posted and shared to Dindigul groups — reaches local
+                business buyers and all age groups.</div>
+            </div>
+          </div>
+          <div class="tp">
+            <div class="tp-ico">▶️</div>
+            <div>
+              <div class="tp-t">YouTube — 3K Subscribers · Extra Bonus</div>
+              <div class="tp-d">Medium videos uploaded to YouTube — extra discovery, longer shelf life, extra engagement
+                bonus for your brand at no extra cost.</div>
+            </div>
+          </div>
+          <div class="tp">
+            <div class="tp-ico">🏢</div>
+            <div>
+              <div class="tp-t">3 Pages — Talks + Partners + Your Page</div>
+              <div class="tp-d">Video goes live simultaneously on Dindigul Talks, Dindigul Digital Partners, and your
+                own business page.</div>
+            </div>
+          </div>
+          <div class="tp">
+            <div class="tp-ico">🎯</div>
+            <div>
+              <div class="tp-t">Natural Leads — Without Paid Ads</div>
+              <div class="tp-d">Many of our 50+ clients get organic enquiries just from the Dindigul Talks post alone.
+                Real proof, real results.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="sec" style="background:var(--off);">
+    <div class="sin">
+      <div class="stag">Process</div>
+      <div class="sh">HOW IT <span class="g">WORKS</span></div>
+      <p class="sp">From your first message to your brand reaching 90K+ people — clear and committed.</p>
+      <div class="how-grid">
+        <div class="hw-i rv">
+          <div class="hw-n">01</div>
+          <div class="hw-ico">🤝</div>
+          <div class="hw-t">Choose Your Plan</div>
+          <div class="hw-d">Pick a monthly package or book a one-time video. We understand your brand and goals before
+            starting.</div>
+          <div class="hw-tm">திட்டம் தேர்ந்தெடுங்கள்</div>
+        </div>
+        <div class="hw-i rv">
+          <div class="hw-n">02</div>
+          <div class="hw-ico">💰</div>
+          <div class="hw-t">Simple Payment Terms</div>
+          <div class="hw-d">First month — pay after video is posted. From 2nd month: 50% advance before video, 50%
+            balance after posting.</div>
+          <div class="hw-tm">கட்டணம் செலுத்துங்கள்</div>
+        </div>
+        <div class="hw-i rv">
+          <div class="hw-n">03</div>
+          <div class="hw-ico">🎬</div>
+          <div class="hw-t">We Create Your Content</div>
+          <div class="hw-d">Any type of video — 30 to 60 seconds based on your requirement. AI-powered branded posters
+            included free with every plan.</div>
+          <div class="hw-tm">உள்ளடக்கம் உருவாக்குகிறோம்</div>
+        </div>
+        <div class="hw-i rv">
+          <div class="hw-n">04</div>
+          <div class="hw-ico">✅</div>
+          <div class="hw-t">You Review & Approve</div>
+          <div class="hw-d">We share the content before posting. 1 revision included. Your approval — then we go live
+            across all platforms.</div>
+          <div class="hw-tm">நீங்கள் அனுமதிக்கிறீர்கள்</div>
+        </div>
+        <div class="hw-i rv">
+          <div class="hw-n">05</div>
+          <div class="hw-ico">📡</div>
+          <div class="hw-t">Posted on 3 Pages × 3 Platforms</div>
+          <div class="hw-d">Goes live on Dindigul Talks, Dindigul Digital Partners, and your page — across Instagram,
+            Facebook, and YouTube.</div>
+          <div class="hw-tm">மூன்று தளங்களில் பதிவிடுகிறோம்</div>
+        </div>
+        <div class="hw-i rv">
+          <div class="hw-n">06</div>
+          <div class="hw-ico">📈</div>
+          <div class="hw-t">Monthly Report & Growth</div>
+          <div class="hw-d">Clear monthly performance report — views, reach, engagement. Track exactly what your
+            investment delivers every month.</div>
+          <div class="hw-tm">வளர்ச்சி அறிக்கை பெறுங்கள்</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 PLATFORMS -->
+  <div class="plat-sec">
+    <div class="sin">
+      <div class="stag" style="color:var(--gold2);">Distribution Power</div>
+      <div class="sh" style="color:#fff;">3 PAGES · <span style="color:var(--gold2)">3 PLATFORMS</span></div>
+      <p class="sp" style="color:rgba(255,255,255,0.43);">Every video posted on 3 pages, across Instagram, Facebook &
+        YouTube — simultaneously.</p>
+      <div class="plat-grid">
+        <div class="pc rv">
+          <div class="pc-n">01</div>
+          <div class="pc-ico">📺</div>
+          <div class="pc-name">Dindigul Talks</div>
+          <div class="pc-sub">Instagram · Facebook · YouTube</div>
+          <div class="pc-desc">Primary channel — 90K+ followers. Your video reaches thousands of real Dindigul people
+            who already trust and follow Dindigul Talks. This is your biggest advantage over every competitor.</div>
+        </div>
+        <div class="pc rv">
+          <div class="pc-n">02</div>
+          <div class="pc-ico">🏢</div>
+          <div class="pc-name">Digital Partners</div>
+          <div class="pc-sub">Instagram · Facebook</div>
+          <div class="pc-desc">Posted on Dindigul Digital Partners page — our agency portfolio. Builds your brand
+            credibility and reaches businesses searching for reliable local brands.</div>
+        </div>
+        <div class="pc rv">
+          <div class="pc-n">03</div>
+          <div class="pc-ico">🏪</div>
+          <div class="pc-name">Your Business Page</div>
+          <div class="pc-sub">Instagram · Facebook</div>
+          <div class="pc-desc">Published directly on your Facebook and Instagram pages — your own followers see
+            consistent, professional content from your brand every single month.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ PACKAGES ══ -->
+  <div class="pkg-sec" id="packages">
+    <div class="sin">
+      <div class="stag">Pricing</div>
+      <div class="sh">CHOOSE YOUR <span class="g">PLAN</span></div>
+      <p class="sp" style="color:var(--mid);">Higher plans = lower per-video cost. <strong>All posters are 100%
+          free</strong> — because your video gets posted on Dindigul Talks (90K followers), Digital Partners, and your
+        own page. Meta Ads always separate.</p>
+
+      <div class="pay-box" style="margin-top:16px;">
+        <div class="pay-t">💰 Payment Terms — Simple & Fair</div>
+        <div class="pay-steps">
+          <div class="ps">
+            <div class="psn">1</div><span><strong>First Month:</strong> Pay after video is posted — zero risk to
+              start</span>
+          </div>
+          <div class="ps">
+            <div class="psn">2</div><span><strong>From 2nd Month:</strong> 50% advance before video creation</span>
+          </div>
+          <div class="ps">
+            <div class="psn">3</div><span><strong>Balance 50%:</strong> After video is posted successfully</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-tog">
+        <button class="tb active" onclick="showPkg('talks')">Dindigul Talks Promotion</button>
+        <button class="tb" onclick="showPkg('client')">Client Page Marketing</button>
+        <button class="tb" onclick="showPkg('individual')">Individual Video</button>
+      </div>
+
+      <div id="pkgTalks">
+        <div class="pkg-grid">
+
+          <div class="pkc t1 rv">
+            <div class="pkg-tp">🌱 Starter</div>
+            <div class="pkg-name">Starter Plan</div>
+            <div class="pkg-price"><sup>₹</sup>4,000</div>
+            <div class="pkg-pv">per month · ₹4,000 per video</div>
+            <div class="pkg-con">⏱ 3 Month Contract</div>
+            <div class="pkg-line"></div>
+            <ul class="pkg-f">
+              <li><span class="fi">🎬</span><span><strong>1 Video</strong> — 30 to 60 sec, any content type</span></li>
+              <li><span class="fi">🖼️</span><span><strong>3 Branded Posters — Free</strong></span></li>
+              <li><span class="fi">🚫</span><span style="color:var(--light);font-size:12px;">No Festival Poster</span>
+              </li>
+              <li><span class="fi">💬</span> WhatsApp Support</li>
+              <li><span class="fi">📊</span> Basic Monthly Report</li>
+              <li><span class="fi">⏱️</span> 3-Day Turnaround · 1 Revision</li>
+            </ul>
+            <div class="pkg-bonus">🌟 Video posted on <strong>Dindigul Talks (90K)</strong> + Digital Partners + Your
+              Page — all platforms</div>
+            <div class="pkg-note">📢 Meta Ads available as separate add-on</div>
+            <a class="pkg-cta" onclick="goTo('contact')">Start Starter Plan →</a>
+          </div>
+
+          <div class="pkc t2 rv">
+            <div class="pkg-tp">📈 Growth</div>
+            <div class="pkg-name">Growth Plan</div>
+            <div class="pkg-price"><sup>₹</sup>7,600</div>
+            <div class="pkg-pv">per month · ₹3,800/video <span class="sv sv1">Save ₹400/video</span></div>
+            <div class="pkg-con">⏱ 3 Month Contract</div>
+            <div class="pkg-line"></div>
+            <ul class="pkg-f">
+              <li><span class="fi">🎬</span><span><strong>2 Videos</strong> — 30 to 60 sec, any content type</span></li>
+              <li><span class="fi">🖼️</span><span><strong>6 Branded Posters — Free</strong></span></li>
+              <li><span class="fi">🚫</span><span style="color:var(--light);font-size:12px;">No Festival Poster</span>
+              </li>
+              <li><span class="fi">💬</span> WhatsApp + Lead Forms</li>
+              <li><span class="fi">📊</span> Detailed Monthly Report</li>
+              <li><span class="fi">⏱️</span> 2-Day Turnaround · 1 Revision/Video</li>
+            </ul>
+            <div class="pkg-bonus">🌟 <strong>2 videos on Dindigul Talks (90K)</strong> — double the local reach, double
+              the leads</div>
+            <div class="pkg-note">📢 Meta Ads available as separate add-on</div>
+            <a class="pkg-cta" onclick="goTo('contact')">Start Growth Plan →</a>
+          </div>
+
+          <div class="pkc t3 rv">
+            <div class="pkg-pop">★ Most Popular</div>
+            <div class="pkg-tp">⭐ Prime</div>
+            <div class="pkg-name">Prime Plan</div>
+            <div class="pkg-price"><sup>₹</sup>11,100</div>
+            <div class="pkg-pv">per month · ₹3,700/video <span class="sv sv2">Save ₹900/mo</span></div>
+            <div class="pkg-con">⏱ 3 Month Contract</div>
+            <div class="pkg-line"></div>
+            <ul class="pkg-f">
+              <li><span class="fi">🎬</span><span><strong>3 Videos</strong> — 30 to 60 sec, any content type</span></li>
+              <li><span class="fi">🖼️</span><span><strong>9 Branded Posters — Free</strong></span></li>
+              <li><span class="fi">🎉</span><span><strong>1 Festival Poster — Free ✅</strong></span></li>
+              <li><span class="fi">💬</span> WhatsApp + Calls + Lead Forms</li>
+              <li><span class="fi">📊</span> Advanced Analytics</li>
+              <li><span class="fi">⏱️</span> 2-Day Priority Turnaround · 1 Revision</li>
+            </ul>
+            <div class="pkg-bonus">🌟 <strong>3 videos on Dindigul Talks (90K)</strong> — consistent weekly brand
+              presence, maximum organic leads</div>
+            <div class="pkg-note">📢 Meta Ads available as separate add-on</div>
+            <a class="pkg-cta" onclick="goTo('contact')">Start Prime Plan →</a>
+          </div>
+
+          <div class="pkc t4 rv">
+            <div class="pkg-tp">🔥 Power</div>
+            <div class="pkg-name">Power Plan</div>
+            <div class="pkg-price"><sup>₹</sup>14,400</div>
+            <div class="pkg-pv">per month · ₹3,600/video <span class="sv sv3">Save ₹1,600/mo</span></div>
+            <div class="pkg-con">⏱ 3 Month Contract</div>
+            <div class="pkg-line"></div>
+            <ul class="pkg-f">
+              <li><span class="fi">🎬</span><span><strong>4 Videos</strong> — 30 to 60 sec, any content type</span></li>
+              <li><span class="fi">🖼️</span><span><strong>12 Branded Posters — Free</strong></span></li>
+              <li><span class="fi">🎉</span><span><strong>1 Festival Poster — Free ✅</strong></span></li>
+              <li><span class="fi">💬</span> WhatsApp + Calls + Lead Forms</li>
+              <li><span class="fi">📊</span> Comprehensive Analytics</li>
+              <li><span class="fi">⏱️</span> Priority Turnaround · 1 Revision/Video</li>
+            </ul>
+            <div class="pkg-bonus">🌟 <strong>4 videos on Dindigul Talks (90K)</strong> — every week your brand visible
+              across Dindigul</div>
+            <div class="pkg-note">📢 Meta Ads available as separate add-on</div>
+            <a class="pkg-cta" onclick="goTo('contact')">Start Power Plan →</a>
+          </div>
+
+          <div class="pkc t5 pkc-e rv">
+            <div class="pkg-pop">👑 Elite — Maximum Scale · Best Value</div>
+            <div>
+              <div class="pkg-tp" style="margin-top:8px;">👑 Elite</div>
+              <div class="pkg-name">Elite Plan</div>
+              <div class="pkg-price"><sup>₹</sup>17,500</div>
+              <div class="pkg-pv">per month · ₹3,500/video <span class="sv sv4">Save ₹2,500/mo</span></div>
+              <div class="pkg-con">⏱ 3 Month Contract</div>
+              <div class="pkg-line"></div>
+              <ul class="pkg-f">
+                <li><span class="fi">🎬</span><span><strong>5 Videos</strong> — 30 to 60 sec, any content type</span>
+                </li>
+                <li><span class="fi">🖼️</span><span><strong>15 Branded Posters — Free</strong></span></li>
+                <li><span class="fi">🎉</span><span><strong>2 Festival Posters — Free ✅</strong></span></li>
+                <li><span class="fi">👤</span> Dedicated Account Manager</li>
+              </ul>
+            </div>
+            <div style="padding-top:34px;">
+              <ul class="pkg-f">
+                <li><span class="fi">💬</span> Full Lead Gen — WhatsApp, Calls, Forms</li>
+                <li><span class="fi">📊</span> Full Analytics + Monthly Strategy Call</li>
+                <li><span class="fi">🎯</span> Meta Ads Campaign Setup Included</li>
+                <li><span class="fi">⏱️</span> Same-Day Priority Turnaround</li>
+                <li><span class="fi">✅</span> 1 Revision per Video</li>
+              </ul>
+              <div class="pkg-bonus" style="margin-top:13px;">🌟 <strong>5 videos on Dindigul Talks (90K)</strong> —
+                every week, every platform, dominant local visibility year-round</div>
+              <div class="pkg-note">📢 Meta Ads setup included — ad budget billed separately</div>
+              <a class="pkg-cta" style="margin-top:12px;" onclick="goTo('contact')">Start Elite Plan →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    <div id="pkgClient" style="display:none;">
+  <div class="pkg-grid">
+
+    <!-- Starter -->
+    <div class="pkc t1 rv">
+      <div class="pkg-tp">🌱 Starter</div>
+      <div class="pkg-name">Starter Plan</div>
+      <div class="pkg-price"><sup>₹</sup>6,500</div>
+      <div class="pkg-pv">Entry Plan</div>
+      <div class="pkg-line"></div>
+      <ul class="pkg-f">
+        <li><span class="fi">🎬</span><span><strong>4 Reels</strong></span></li>
+        <li><span class="fi">🖼️</span><span><strong>8 Posters</strong></span></li>
+        <li><span class="fi">📅</span> Monthly Content Planning</li>
+        <li><span class="fi">📍</span> Local Hashtag Strategy</li>
+        <li><span class="fi">💬</span> WhatsApp Support</li>
+      </ul>
+      <div class="pkg-note">🎬 Each reel includes shoot, edit & concept</div>
+      <a class="pkg-cta" onclick="goTo('contact')">Start Starter Plan →</a>
+    </div>
+
+    <!-- Growth -->
+    <div class="pkc t2 rv">
+      <div class="pkg-pop">⭐ Most Popular</div>
+      <div class="pkg-tp">📈 Growth</div>
+      <div class="pkg-name">Growth Plan</div>
+      <div class="pkg-price"><sup>₹</sup>10,000</div>
+      <div class="pkg-pv">Best Value</div>
+      <div class="pkg-line"></div>
+      <ul class="pkg-f">
+        <li><span class="fi">🎬</span><span><strong>7 Reels</strong></span></li>
+        <li><span class="fi">🖼️</span><span><strong>14 Posters</strong></span></li>
+        <li><span class="fi">📅</span> Monthly Content Plan</li>
+        <li><span class="fi">📊</span> Performance Report</li>
+        <li><span class="fi">📲</span> Story Posting</li>
+        <li><span class="fi">📍</span> Hashtag + Caption Strategy</li>
+      </ul>
+      <div class="pkg-note">💰 Most clients choose this plan</div>
+      <a class="pkg-cta" onclick="goTo('contact')">Start Growth Plan →</a>
+    </div>
+
+    <!-- Pro -->
+    <div class="pkc t3 rv">
+      <div class="pkg-tp">🔥 Pro</div>
+      <div class="pkg-name">Pro Plan</div>
+      <div class="pkg-price"><sup>₹</sup>14,000</div>
+      <div class="pkg-pv">Business Growth</div>
+      <div class="pkg-line"></div>
+      <ul class="pkg-f">
+        <li><span class="fi">🎬</span><span><strong>10 Reels</strong></span></li>
+        <li><span class="fi">🖼️</span><span><strong>20 Posters</strong></span></li>
+        <li><span class="fi">📅</span> Advanced Content Planning</li>
+        <li><span class="fi">📊</span> Detailed Monthly Report</li>
+        <li><span class="fi">📈</span> Content Optimization</li>
+        <li><span class="fi">📲</span> Story + Engagement Support</li>
+      </ul>
+      <div class="pkg-note">🚀 Best for growing businesses</div>
+      <a class="pkg-cta" onclick="goTo('contact')">Start Pro Plan →</a>
+    </div>
+
+    <!-- Elite -->
+    <div class="pkc t4 rv">
+      <div class="pkg-tp">👑 Elite</div>
+      <div class="pkg-name">Elite Plan</div>
+      <div class="pkg-price"><sup>₹</sup>20,000</div>
+      <div class="pkg-pv">Full Marketing</div>
+      <div class="pkg-line"></div>
+      <ul class="pkg-f">
+        <li><span class="fi">🎬</span><span><strong>15 Reels</strong></span></li>
+        <li><span class="fi">🖼️</span><span><strong>30 Posters</strong></span></li>
+        <li><span class="fi">📅</span> Full Content Strategy</li>
+        <li><span class="fi">📊</span> Advanced Analytics Report</li>
+        <li><span class="fi">📈</span> Growth Optimization</li>
+        <li><span class="fi">📲</span> Daily Story Updates</li>
+      </ul>
+      <div class="pkg-note">💰 Maximum ROI Plan</div>
+      <a class="pkg-cta" onclick="goTo('contact')">Start Elite Plan →</a>
+    </div>
+
+  </div>
+</div>
+
+      <div id="pkgIndividual" style="display:none;">
+        <div class="ind-box">
+          <div>
+            <div class="ind-l">One-Time Video</div>
+            <div class="ind-p">₹4,500 <span>to ₹6,000</span></div>
+            <p style="font-size:13px;color:var(--mid);line-height:1.7;margin-top:9px;">Try us before committing to a
+              monthly plan. Price varies by content type and complexity. Existing Dindigul Talks clients get priority
+              and a package conversion discount.</p>
+            <div
+              style="margin-top:13px;padding:11px 13px;background:rgba(34,197,94,0.05);border:1px solid rgba(34,197,94,0.16);border-radius:9px;">
+              <div
+                style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#16a34a;margin-bottom:4px;">
+                Payment</div>
+              <div style="font-size:13px;color:var(--mid);">Full payment after video is posted — first time only</div>
+            </div>
+            <a class="btn-g"
+              style="margin-top:16px;display:inline-flex;font-size:13px;padding:11px 20px;cursor:pointer;"
+              onclick="goTo('contact')">Book a Video →</a>
+          </div>
+          <ul class="ind-f">
+            <li><span class="fi">🎬</span><span>1 Video — 30 to 60 sec, any content type</span></li>
+            <li><span class="fi">📺</span><span><strong>Posted on Dindigul Talks (90K)</strong> — Instagram, Facebook &
+                YouTube</span></li>
+            <li><span class="fi">🏢</span><span>Posted on Digital Partners + Your Page</span></li>
+            <li><span class="fi">✅</span> 1 Revision Included</li>
+            <li><span class="fi">⏱️</span> 3-Day Turnaround</li>
+            <li><span class="fi">💬</span> WhatsApp Coordination Throughout</li>
+            <li><span class="fi">🔄</span> Repeat clients get priority + package discount</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="meta-box">
+        <div class="meta-h">
+          <span class="meta-pill">Add-On</span>
+          <span class="meta-ttl">Meta Ads — Paid Advertising · Separate Cost</span>
+        </div>
+        <div class="meta-grid">
+          <div class="mi"><span>🎯</span>Available with any package</div>
+          <div class="mi"><span>⚙️</span>Full campaign setup & management</div>
+          <div class="mi"><span>💰</span>Min. budget ₹800/video per 7 days</div>
+          <div class="mi"><span>📍</span>Targeted Dindigul local audience</div>
+          <div class="mi"><span>📊</span>Monthly ad performance report</div>
+          <div class="mi"><span>📈</span>Custom budget per your goals</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SERVICES ══ -->
+  <div class="svc-sec" id="services">
+    <div class="sin">
+      <div class="stag">All Services</div>
+      <div class="sh">EVERYTHING WE <span class="g">OFFER</span></div>
+      <p class="sp">One team, multiple capabilities — your complete digital partner in Dindigul.</p>
+      <div class="svc-grid">
+        <div class="sv-c rv">
+          <div class="sv-ico">📱</div>
+          <div class="sv-t">Social Media Management</div>
+          <div class="sv-d">Full Facebook & Instagram page management — content calendar, posting schedule, hashtag
+            strategy, captions in Tamil & English. Your brand stays consistent every month.</div>
+        </div>
+        <div class="sv-c rv">
+          <div class="sv-ico">🎬</div>
+          <div class="sv-t">Video Content Creation</div>
+          <div class="sv-d">Any type of video — brand promo, offers, testimonials, event coverage, product showcase. 30
+            to 60 sec based on your need. Posted on Dindigul Talks (90K) + 2 more pages across 3 platforms.</div>
+        </div>
+        <div class="sv-c rv">
+          <div class="sv-ico">🖼️</div>
+          <div class="sv-t">AI-Powered Poster Design</div>
+          <div class="sv-d">Professional branded posters — promotional, festival, offer announcements. Created with AI
+            tools and included 100% free with every video plan. Zero extra cost.</div>
+        </div>
+        <div class="sv-c rv">
+          <div class="sv-ico">🎯</div>
+          <div class="sv-t">Meta Ads Management</div>
+          <div class="sv-d">Facebook & Instagram paid advertising. Full campaign setup, local audience targeting, budget
+            management, and monthly performance report. Available as add-on to any plan.</div>
+        </div>
+        <div class="sv-c rv">
+          <div class="sv-ico">🌐</div>
+          <div class="sv-t">Website Development</div>
+          <div class="sv-d">Professional websites for any business — billing software, e-commerce shops, school portals,
+            clinic systems, brand websites, landing pages. Fast, mobile-friendly, SEO ready. 5 years full-stack
+            experience.</div>
+        </div>
+        <div class="sv-c rv">
+          <div class="sv-ico">📲</div>
+          <div class="sv-t">App Development</div>
+          <div class="sv-d">Android & iOS mobile apps — business apps, billing apps, school apps, e-commerce apps,
+            custom portals, dashboards. Any complexity. 5 years of full-stack development experience.</div>
+        </div>
+      </div>
+
+      <div class="why-box">
+        <div class="why-h">⚡ WHAT MAKES US DIFFERENT</div>
+        <div class="why-grid">
+          <div class="wi">
+            <div class="wi-ico">🏆</div>
+            <div class="wi-t">Dindigul Talks — 90K+ Real Followers</div>
+            <div class="wi-d">No other agency has an 90K+ local audience channel. Your brand reaches real Dindigul
+              people who trust us.</div>
+          </div>
+          <div class="wi">
+            <div class="wi-ico">📍</div>
+            <div class="wi-t">100% Hyperlocal Focus</div>
+            <div class="wi-d">We only serve Dindigul. Local culture, local language, local audience — we know exactly
+              what works here.</div>
+          </div>
+          <div class="wi">
+            <div class="wi-ico">💰</div>
+            <div class="wi-t">Transparent Pricing Always</div>
+            <div class="wi-d">Charge per video only. Posters free. Meta Ads separate. No hidden charges. What you see is
+              what you pay.</div>
+          </div>
+          <div class="wi">
+            <div class="wi-ico">✅</div>
+            <div class="wi-t">50+ Clients · Proven Track Record</div>
+            <div class="wi-d">Supreme, Max, Darling, James & Co, Parvathys Silks and 50+ more local businesses already
+              trust us.</div>
+          </div>
+          <div class="wi">
+            <div class="wi-ico">🔧</div>
+            <div class="wi-t">Everything Under One Roof</div>
+            <div class="wi-d">Social media + video + website + app + billing software + camera rental. No need for
+              multiple vendors.</div>
+          </div>
+          <div class="wi">
+            <div class="wi-ico">🗣️</div>
+            <div class="wi-t">Tamil & English Both</div>
+            <div class="wi-d">Content, support, and communication in Tamil and English. We speak your language —
+              literally.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wd-box">
+        <div>
+          <div class="wd-tag">Full Stack · 5 Years Experience</div>
+          <div class="wd-h">WEBSITE &<br>APP<br>DEVELOPMENT</div>
+          <p class="wd-d">We build websites and mobile apps for any local business — from simple shops to full-scale
+            platforms. Professional, affordable, and built to grow.</p>
+          <div class="wd-list">
+            <div class="wdl"><span>🧾</span>Billing software for local shops & businesses</div>
+            <div class="wdl"><span>🛒</span>E-commerce websites for retail shops</div>
+            <div class="wdl"><span>🏫</span>School management systems & portals</div>
+            <div class="wdl"><span>🏥</span>Clinic & hospital appointment systems</div>
+            <div class="wdl"><span>🎨</span>Brand & portfolio websites</div>
+            <div class="wdl"><span>📲</span>Android & iOS mobile apps</div>
+          </div>
+          <a class="btn-g" style="font-size:13px;padding:11px 20px;cursor:pointer;" onclick="goTo('contact')">Discuss
+            Your Project →</a>
+        </div>
+        <div>
+          <div
+            style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.33);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:11px;">
+            What We Build</div>
+          <div class="wd-skills">
+            <div class="wsk">🌐 Business Websites</div>
+            <div class="wsk">🛒 E-Commerce</div>
+            <div class="wsk">🧾 Billing Software</div>
+            <div class="wsk">🏫 School Systems</div>
+            <div class="wsk">📲 Android Apps</div>
+            <div class="wsk">🍎 iOS Apps</div>
+            <div class="wsk">🎯 Landing Pages</div>
+            <div class="wsk">📊 Custom Portals</div>
+          </div>
+          <div class="wd-note">💡 <strong style="color:var(--gold2)">5 years full-stack experience</strong> — React,
+            Node.js, mobile apps, databases. Any technology, any complexity.</div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;">
+        <div
+          style="font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--navy);letter-spacing:1px;margin-bottom:5px;">
+          📷 CAMERA RENTAL</div>
+        <p style="font-size:13px;color:var(--light);margin-bottom:14px;">Professional Canon cameras available for daily
+          rental — events, shoots, content creation.</p>
+        <div class="cam-grid">
+          <div class="cam">
+            <div class="cam-n">Canon 200D Mark II</div>
+            <div class="cam-l">18–55mm Short Lens</div>
+            <div class="cam-p">₹600 <span>/ day</span></div>
+          </div>
+          <div class="cam">
+            <div class="cam-n">Canon 200D Mark II</div>
+            <div class="cam-l">18–55mm + 55–250mm Short & Portrait Lens</div>
+            <div class="cam-p">₹900 <span>/ day</span></div>
+          </div>
+          <div class="cam">
+            <div class="cam-n">Canon 700D</div>
+            <div class="cam-l">18–55mm Short Lens</div>
+            <div class="cam-p">₹500 <span>/ day</span></div>
+          </div>
+          <div class="cam">
+            <div class="cam-n">Canon 700D</div>
+            <div class="cam-l">18–55mm + 55–250mm Short & Portrait Lens</div>
+            <div class="cam-p">₹800 <span>/ day</span></div>
+          </div>
+          <div class="cam">
+            <div class="cam-n">50mm Prime Lens</div>
+            <div class="cam-l">Add-on to any camera — compatible with both Canon models</div>
+            <div class="cam-p">₹500 <span>/ day add-on</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ ABOUT ══ -->
+  <div class="about-sec" id="about">
+    <div class="sin">
+      <div class="stag">About Us</div>
+      <div class="sh">DINDIGUL'S OWN <span class="g">DIGITAL TEAM</span></div>
+      <div class="ab-grid">
+        <div>
+          <div class="ab-card">
+            <div class="ab-lr">
+              <div class="ab-li-fb">🏢</div>
+              <div>
+                <div class="ab-n">Dindigul Digital Partners™</div>
+                <div class="ab-s">Your Growth Partners in Dindigul</div>
+              </div>
+            </div>
+            <div class="ab-rows">
+              <div class="ab-row"><span class="ab-l">📍 Location</span><span class="ab-v">1RV Nagar, Dindigul</span>
+              </div>
+              <div class="ab-row"><span class="ab-l">🕐 Shop Hours</span><span class="ab-v">9:30 AM – 7:30 PM
+                  Daily</span></div>
+              <div class="ab-row"><span class="ab-l">💬 Online</span><span class="ab-v">Always Available</span></div>
+              <div class="ab-row"><span class="ab-l">📺 Dindigul Talks</span><span class="ab-v">90K+ Total
+                  Followers</span></div>
+              <div class="ab-row"><span class="ab-l">👥 Clients</span><span class="ab-v">50+ Happy Businesses</span>
+              </div>
+              <div class="ab-row"><span class="ab-l">💻 Dev Exp</span><span class="ab-v">5 Years Full-Stack</span></div>
+              <div class="ab-row"><span class="ab-l">🗣️ Languages</span><span class="ab-v">Tamil & English</span></div>
+            </div>
+          </div>
+          <div class="addr" style="margin-top:11px;">
+            <div class="addr-l">📍 Office Address</div>
+            <div class="ab-quote">Dindigul Digital Partners, First Floor,<br>Near Annai Clinic, Malaikottai
+              Mariyamma<br>Kovil Ground Opposite, 1RV Nagar,<br>Mohamadiyapuram, Dindigul — 624001</div>
+          </div>
+        </div>
+        <div>
+          <p class="ab-para">We are <strong>Dindigul Digital Partners</strong> — a passionate team helping local
+            Dindigul businesses grow their brand in the digital world.</p>
+          <p class="ab-para">We're not a big city agency. We're <strong>from Dindigul, for Dindigul.</strong> We
+            understand local culture, speak your language, and know exactly what works here. With <strong>50+ happy
+              clients</strong> including Supreme, Max, Darling, James & Co, Parvathys Silks, and many more — our results
+            speak for themselves.</p>
+          <div class="ab-quote">உங்கள் வியாபாரத்தை லட்சக்கணக்கான மக்களிடம் கொண்டு செல்வோம்<small>We will take your
+              business to lakhs of people — Your Growth Partners in Dindigul</small></div>
+          <p class="ab-para">Our biggest strength is <strong>Dindigul Talks</strong> — 90K+ followers across Instagram
+            (77K), Facebook (10K), and YouTube (3K). Every video reaches this real, organic local audience. Plus our
+            <strong>full-stack development team</strong> (5 years experience) builds websites, apps, billing software,
+            and more. We are your complete digital partner.</p>
+          <div class="vals">
+            <div class="val"><span>🏆</span> Dindigul Talks Advantage</div>
+            <div class="val"><span>💰</span> Transparent Pricing</div>
+            <div class="val"><span>📍</span> Hyperlocal Focus</div>
+            <div class="val"><span>🗣️</span> Tamil & English</div>
+            <div class="val"><span>⏱️</span> On-Time Delivery</div>
+            <div class="val"><span>📊</span> Monthly Reports</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ CONTACT ══ -->
+  <div class="ct-sec" id="contact">
+    <div class="ct-in">
+      <div>
+        <div class="stag" style="color:var(--gold2);">Contact Us</div>
+        <div class="cbig">LET'S GROW<br>YOUR <span class="g">BRAND</span><br>TODAY</div>
+        <div class="ctamil">உங்கள் வணிகத்தை வளர்க்க தொடர்பு கொள்ளுங்கள்</div>
+        <div class="chours">🕐 Shop: 9:30 AM – 7:30 PM · Daily<br>💬 Online: Always available on WhatsApp</div>
+        <div class="clinks">
+          <a href="tel:+917904998687" class="cl-i">
+            <div class="cl-ico">📞</div>
+            <div>
+              <div class="cl-l">Call Us</div>
+              <div class="cl-v">+91 79049 98687</div>
+            </div>
+          </a>
+          <a href="https://wa.me/917904998687" target="_blank" class="cl-i">
+            <div class="cl-ico">💬</div>
+            <div>
+              <div class="cl-l">WhatsApp</div>
+              <div class="cl-v">Chat instantly</div>
+            </div>
+          </a>
+          <a href="mailto:dindiguldigitalpartner@gmail.com" class="cl-i">
+            <div class="cl-ico">✉️</div>
+            <div>
+              <div class="cl-l">Email</div>
+              <div class="cl-v">dindiguldigitalpartner@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/dindigul_digital_partners" target="_blank" class="cl-i">
+            <div class="cl-ico">📸</div>
+            <div>
+              <div class="cl-l">Instagram — Agency</div>
+              <div class="cl-v">@dindigul_digital_partners</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/dindigul_talks" target="_blank" class="cl-i">
+            <div class="cl-ico">📺</div>
+            <div>
+              <div class="cl-l">Instagram — Dindigul Talks</div>
+              <div class="cl-v">@dindigul_talks · 77K Followers</div>
+            </div>
+          </a>
+          <a href="https://linktr.ee/dindiguldigitalpartner" target="_blank" class="cl-i">
+            <div class="cl-ico">🌐</div>
+            <div>
+              <div class="cl-l">All Links</div>
+              <div class="cl-v">linktr.ee/dindiguldigitalpartner</div>
+            </div>
+          </a>
+        </div>
+        <div class="caddr">
+          <div class="caddr-l">📍 Office Address</div>
+          <div class="caddr-t">First Floor, Near Annai Clinic, Malaikottai Mariyamma Kovil Ground Opposite, 1RV Nagar,
+            Mohamadiyapuram, Dindigul — 624001</div>
+        </div>
+      </div>
+      <div class="cf">
+        <div class="cf-t">SEND ENQUIRY</div>
+        <div class="cf-s">Fill the form — we'll reach you on WhatsApp within 24 hours</div>
+        <div class="fg frow">
+          <div><label>Your Name</label><input type="text" id="fn" placeholder="Owner / Contact name"></div>
+          <div><label>Mobile Number</label><input type="tel" id="fm" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="fg"><label>Business Name</label><input type="text" id="fb" placeholder="Your shop or brand name">
+        </div>
+        <div class="fg"><label>Business Type</label><input type="text" id="ft"
+            placeholder="e.g. Restaurant, School, Clinic, Clothing..."></div>
+        <div class="fg">
+          <label>Service Interested In</label>
+          <select id="fs">
+            <option value="">— Select Service or Package —</option>
+            <optgroup label="Social Media Packages">
+              <option>Starter Plan – ₹4,000/month (1 Video)</option>
+              <option>Growth Plan – ₹7,600/month (2 Videos)</option>
+              <option>Prime Plan – ₹11,100/month (3 Videos)</option>
+              <option>Power Plan – ₹14,400/month (4 Videos)</option>
+              <option>Elite Plan – ₹17,500/month (5 Videos)</option>
+              <option>Individual Video – ₹4,500 to ₹6,000</option>
+            </optgroup>
+            <optgroup label="Development & Other">
+              <option>Website Development</option>
+              <option>App Development</option>
+              <option>Billing Software</option>
+              <option>Camera Rental</option>
+              <option>Meta Ads Management</option>
+            </optgroup>
+            <option>Not sure — Need Guidance</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message (Optional)</label><textarea id="fmsg"
+            placeholder="Any questions or specific requirements..."></textarea></div>
+        <button class="sub-btn" id="fbtn" onclick="doSubmit()">SEND ENQUIRY →</button>
+        <div class="ok-msg" id="fok">✅ Sent! We'll WhatsApp you within 24 hours. நன்றி! 🙏</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ft-in">
+      <div class="ft-top">
+        <div>
+          <div class="ft-bl">
+            <div class="ft-li-fb">🏢</div>
+            <div class="ft-bn">Dindigul Digital Partners™</div>
+          </div>
+          <p class="ft-d">Your Growth Partners in Dindigul. Social media management, video content, website & app
+            development, billing software, and camera rental — all under one roof. Powered by Dindigul Talks (90K+
+            followers).</p>
+          <div class="ft-tamil">உங்கள் வியாபாரத்தை லட்சக்கணக்கான மக்களிடம் கொண்டு செல்வோம்</div>
+        </div>
+        <div>
+          <div class="ft-ct">Services</div>
+          <ul class="ft-lks">
+            <li><a onclick="goTo('packages')" style="cursor:pointer;">Social Media Packages</a></li>
+            <li><a onclick="goTo('services')" style="cursor:pointer;">Video Content</a></li>
+            <li><a onclick="goTo('services')" style="cursor:pointer;">Website Development</a></li>
+            <li><a onclick="goTo('services')" style="cursor:pointer;">App Development</a></li>
+            <li><a onclick="goTo('services')" style="cursor:pointer;">Billing Software</a></li>
+            <li><a onclick="goTo('services')" style="cursor:pointer;">Camera Rental</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="ft-ct">Follow Us</div>
+          <ul class="ft-lks">
+            <li><a href="https://www.instagram.com/dindigul_digital_partners" target="_blank">Instagram — Agency</a>
+            </li>
+            <li><a href="https://www.instagram.com/dindigul_talks" target="_blank">Instagram — Dindigul Talks</a></li>
+            <li><a href="https://linktr.ee/dindiguldigitalpartner" target="_blank">All Links (Linktree)</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="ft-ct">Contact</div>
+          <ul class="ft-lks">
+            <li><a href="tel:+917904998687">+91 79049 98687</a></li>
+            <li><a href="https://wa.me/917904998687" target="_blank">WhatsApp Us</a></li>
+            <li><a href="mailto:dindiguldigitalpartners@gmail.com">Email Us</a></li>
+            <li><a onclick="goTo('about')" style="cursor:pointer;">📍 1RV Nagar, Dindigul</a></li>
+            <li><a>🕐 9:30 AM – 7:30 PM</a></li>
+            <li><a>💬 Online — Always Available</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-bot">
+        <div class="ft-copy">© 2026 Dindigul Digital Partners™ · All Rights Reserved · Dindigul, Tamil Nadu — 624001
+        </div>
+        <div class="ft-soc">
+          <a href="https://www.instagram.com/dindigul_digital_partners" target="_blank">📸 Agency</a>
+          <a href="https://www.instagram.com/dindigul_talks" target="_blank">📺 Dindigul Talks</a>
+          <a href="https://wa.me/917904998687" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // SMOOTH SCROLL ROUTING — works for all buttons and nav links
+    function goTo(id) {
+      // close mobile menu if open
+      document.getElementById('mobMenu').classList.remove('open');
+      var el = document.getElementById(id);
+      if (el) {
+        var top = el.getBoundingClientRect().top + window.pageYOffset - 68;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    }
+
+    // PACKAGE TOGGLE
+   function showPkg(type) {
+  document.getElementById('pkgTalks').style.display = 'none';
+  document.getElementById('pkgClient').style.display = 'none';
+  document.getElementById('pkgIndividual').style.display = 'none';
+
+  document.getElementById('pkg' + capitalize(type)).style.display = 'block';
+
+  document.querySelectorAll('.tb').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+
+    // CONTACT FORM
+    function doSubmit() {
+      var n = document.getElementById('fn').value.trim();
+      var m = document.getElementById('fm').value.trim();
+      var b = document.getElementById('fb').value.trim();
+      var t = document.getElementById('ft').value.trim();
+      var s = document.getElementById('fs').value;
+      var msg = document.getElementById('fmsg').value.trim();
+
+      if (!n || !m || !b || !s) {
+        alert('Please fill in Name, Mobile, Business Name and Service.');
+        return;
+      }
+
+      var btn = document.getElementById('fbtn');
+      btn.disabled = true;
+      btn.textContent = 'SENDING...';
+
+      var subject = encodeURIComponent('New Enquiry – ' + s + ' – ' + b);
+      var body = encodeURIComponent(
+        'New Website Enquiry – Dindigul Digital Partners\n\n' +
+        'Name: ' + n + '\nMobile: ' + m + '\nBusiness: ' + b +
+        '\nType: ' + (t || '-') + '\nService: ' + s +
+        '\nMessage: ' + (msg || 'None') + '\n\n---\nSubmitted via Website'
+      );
+
+      window.location.href = 'mailto:dindiguldigitalpartners@gmail.com?subject=' + subject + '&body=' + body;
+
+      setTimeout(function () {
+        var wa = encodeURIComponent(
+          'வணக்கம் Dindigul Digital Partners! 👋\n\nNew Website Enquiry:\nName: ' + n +
+          '\nMobile: ' + m + '\nBusiness: ' + b +
+          '\nType: ' + (t || '-') + '\nService: ' + s +
+          '\nMessage: ' + (msg || '-')
+        );
+        window.open('https://wa.me/917904998687?text=' + wa, '_blank');
+      }, 900);
+
+      document.getElementById('fok').style.display = 'block';
+      btn.textContent = '✅ SENT!';
+
+      setTimeout(function () {
+        ['fn', 'fm', 'fb', 'ft', 'fmsg'].forEach(function (id) {
+          document.getElementById(id).value = '';
+        });
+        document.getElementById('fs').value = '';
+        btn.disabled = false;
+        btn.textContent = 'SEND ENQUIRY →';
+        document.getElementById('fok').style.display = 'none';
+      }, 5000);
+    }
+
+    // SCROLL REVEAL
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) e.target.classList.add('vis');
+      });
+    }, { threshold: 0.07 });
+
+    document.querySelectorAll('.rv').forEach(function (el) { observer.observe(el); });
+  </script>
+</body>
+
+</html>
